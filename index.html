@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BestBy – Privacy Policy</title>
+  <title>BestByMe – Privacy Policy</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
            max-width: 680px; margin: 40px auto; padding: 0 24px;
@@ -15,36 +15,44 @@
   </style>
 </head>
 <body>
-  <h1>🗓️ BestBy – Privacy Policy</h1>
-  <p class="updated">Last updated: April 25, 2026</p>
+  <h1>BestByMe – Privacy Policy</h1>
+  <p class="updated">Last updated: April 26, 2026</p>
 
-  <p>BestBy is a food expiry tracker. Your privacy matters. This policy explains what data BestBy handles and how.</p>
+  <p>BestByMe is a food expiry and shopping tracker. This policy explains what data the app handles and how.</p>
 
-  <h2>Data We Collect</h2>
-  <p><strong>None.</strong> BestBy stores all your pantry data locally on your device only. No account is required. No data is sent to our servers because we have no servers.</p>
+  <h2>Local Data</h2>
+  <p>All pantry items, shopping list entries, and master list items are stored locally on your device in a SQLite database. No account is required. Uninstalling the app permanently deletes all local data.</p>
+
+  <h2>AI Scanning (Receipt, Voice, Fridge)</h2>
+  <p>When you use receipt scan, voice scan, or fridge scan, BestByMe sends the following to our AI processing server (<code>pantry-vision-worker.dantonoli.workers.dev</code>, hosted on Cloudflare):</p>
+  <ul>
+    <li>A compressed image (receipt or fridge photo), or</li>
+    <li>A short audio recording (voice scan)</li>
+  </ul>
+  <p>A random device identifier is included with each request solely to enforce free-tier usage quotas. No name, email, or personally identifiable information is attached. Images and audio are processed immediately and <strong>not stored</strong> on our servers.</p>
 
   <h2>Barcode Scanning</h2>
-  <p>When you scan a barcode, BestBy queries the <a href="https://world.openfoodfacts.org" target="_blank">Open Food Facts</a> public API to look up product information (name, brand, category). The barcode number is sent to Open Food Facts as part of this request. No personal information is included. Open Food Facts is an independent non-profit; see their <a href="https://world.openfoodfacts.org/privacy" target="_blank">privacy policy</a> for details.</p>
+  <p>When you scan a barcode, BestByMe queries the <a href="https://world.openfoodfacts.org" target="_blank">Open Food Facts</a> public API with only the barcode number to retrieve product information. No personal data is included. See their <a href="https://world.openfoodfacts.org/privacy" target="_blank">privacy policy</a> for details.</p>
 
-  <h2>Local Notifications</h2>
-  <p>BestBy may send you local notifications when items are about to expire. These notifications are generated entirely on your device and are never transmitted anywhere.</p>
+  <h2>In-App Purchases</h2>
+  <p>Premium subscriptions are processed via <a href="https://www.revenuecat.com" target="_blank">RevenueCat</a>. RevenueCat receives purchase transaction data necessary to validate and manage your subscription. See their <a href="https://www.revenuecat.com/privacy" target="_blank">privacy policy</a> for details.</p>
 
-  <h2>Camera</h2>
-  <p>Camera access is used solely for barcode scanning within the app. No images or video are stored or transmitted.</p>
+  <h2>Notifications</h2>
+  <p>Expiry notifications are generated entirely on your device and never transmitted anywhere.</p>
 
-  <h2>Third-Party Services</h2>
-  <p>The only external service BestBy contacts is the Open Food Facts API (barcode lookups). No analytics, advertising, or tracking SDKs are included.</p>
+  <h2>Camera &amp; Microphone</h2>
+  <p>Camera access is used for barcode scanning, receipt scanning, and fridge scanning. Microphone access is used for voice scanning. No media is stored or shared beyond the AI processing request described above.</p>
 
-  <h2>Data Retention</h2>
-  <p>All pantry data lives in a local SQLite database on your device. Uninstalling the app permanently deletes all data. We have no copies.</p>
+  <h2>Analytics &amp; Advertising</h2>
+  <p>None. BestByMe contains no analytics SDKs, no advertising networks, and no tracking.</p>
 
   <h2>Children</h2>
-  <p>BestBy does not knowingly collect information from anyone, including children.</p>
+  <p>BestByMe does not knowingly collect information from anyone, including children.</p>
 
   <h2>Changes</h2>
-  <p>If we update this policy, the new version will appear at this URL with an updated date.</p>
+  <p>If this policy is updated, the new version will appear at this URL with an updated date.</p>
 
   <h2>Contact</h2>
-  <p>Questions? Email <a href="mailto:claudio.dantonoli@gmail.com">claudio.dantonoli@gmail.com</a></p>
+  <p>Questions? Email <a href="mailto:support@dantonoli.com">support@dantonoli.com</a></p>
 </body>
 </html>
